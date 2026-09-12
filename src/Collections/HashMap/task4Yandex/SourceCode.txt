@@ -1,0 +1,44 @@
+package Collections.ArrayList.task4Yandex;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Money {
+    private static ??? coins = new ??? //придумайте удобное хранилище для монет и стопок монет типа Integer
+    public static void main(String[] args) {
+        addCoin(5);
+        addCoin(5);
+        addCoin(3);
+        addCoin(10);
+        giveCoin(3);
+        giveCoin(5);
+        addCoin(3);
+        giveCoin(5);
+        giveCoin(5);
+    }
+
+    public static void addCoin(int coin) {
+        ??? coinStack = coins.??? //приготовить стопку монет
+        if (coinStack == null) {
+            coinStack = ???
+            coins.???
+            System.out.println("Добавлена стопка для монеты " + coin);
+        }
+        coinStack.add(coin); //добавить монету в стопку
+        System.out.println("Дзынь! Добавлена монета " + coin);
+    }
+
+    public static Integer giveCoin(int coin) {
+        ??? coinStack = coins.??? //приготовить стопку монет
+        if (???) {
+            System.out.println("Монет " + coin + " не осталось!");
+            return null;
+        }
+        Integer give = coinStack.???; //достать монету из стопки
+        if (coinStack.isEmpty()) {
+            coins.???;
+            System.out.println("Стопка монет " + coin + " закончилась...");
+        }
+        System.out.println("Дзынь! Выдана монета " + coin);
+        return give;
+    }
+}
