@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+
+public class Practicum {
+
+    public static void main(String[] args) {
+        ArrayList<MountainHare> hares = new ArrayList<>();
+        hares.add(new MountainHare(4, 4.4, 120));
+        hares.add(new MountainHare(7, 3.6, 150));
+        hares.add(new MountainHare(1, 2.3, 100));
+
+        System.out.println("В лесу лето!");
+        // создайте объект "летний лес с зайцами"
+
+        System.out.println("Список зайцев:");
+        // напечатайте список всех зайцев
+
+        System.out.println("В лесу зима!");
+        // поменяйте время года на зиму
+
+		System.out.println("Список зайцев:");
+        // напечатайте список всех зайцев
+    }
+
+}
+
+public class MountainHare {
+
+    // добавьте переменные и конструктор
+
+    @Override
+    public String toString() {
+        return "Заяц-беляк: " +
+            "age=" + age +
+            ", weight=" + weight +
+            ", jumpLength=" + jumpLength +
+            ", color=" + color +
+            '.';
+    }
+}
+
+
+import java.util.ArrayList;
+
+public class Forest {
+private ArrayList<MountainHare> hares;
+
+    // объявите недостающие переменные и добавьте конструктор
+
+    // добавьте метод setSeason(String newSeason)
+    // в этом методе реализуйте логику смены цвета шубок зайцев-беляков
+
+	    // добавьте метод printHares()
+
+}
